@@ -139,17 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ButtonWIndow.cpp" />
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="Lab5Exmaple.cpp" />
     <ClCompile Include="Lab5Task.cpp" />
     <ClCompile Include="OOPLab5T.cpp" />
     <ClCompile Include="Pupil.cpp" />
+    <ClCompile Include="TitledWindow.cpp" />
+    <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ButtonWindow.h" />
     <ClInclude Include="Human.h" />
     <ClInclude Include="Lab5Exmaple.h" />
     <ClInclude Include="Lab5Task.h" />
     <ClInclude Include="Pupil.h" />
+    <ClInclude Include="TitledWindow.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

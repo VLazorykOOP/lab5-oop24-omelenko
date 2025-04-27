@@ -9,12 +9,11 @@ Pupil::Pupil()
 	objCountpp();
 }
 
-Pupil::Pupil(string name, string surname, string weigth, int grade)
+Pupil::Pupil(string name, string surname, string weigth, int grade) : Grade(grade)
 {
 	setName(name);
 	setSurname(surname);
 	setWeigth(weigth);
-	Grade = grade;
 	cout << "Created pupil" << endl;
 	objCountpp();
 }

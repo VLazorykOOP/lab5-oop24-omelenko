@@ -29,7 +29,7 @@ Human::Human(string name, string surname, string weigth)
 	objCount++;
 }
 
-void Human::print()
+void Human::print() const
 {
 	cout << "Name: " + Name << endl;
 	cout << "Surname: " + Surname << endl;

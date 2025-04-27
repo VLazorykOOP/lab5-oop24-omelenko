@@ -14,13 +14,13 @@ public:
 	Human();
 	Human(string name, string surname, string weigth);
 	~Human();
-	string getName() { return Name; }
+	string getName() const { return Name; }
 	void setName(string name) { Name = name; }
-	string getSurname() { return Surname; }
+	string getSurname() const { return Surname; }
 	void setSurname(string surname) { Surname = surname; }
-	string getWeigth() { return Weigth; }
+	string getWeigth() const { return Weigth; }
 	void setWeigth(string weigth) { Weigth = weigth; }
-	void print();
+	void print() const;
 	void objCountpp() { objCount++; }
 	void objCountmm() { objCount--; }
 };
