@@ -3,6 +3,8 @@
 #include "Window.h"
 #include "TitledWindow.h"
 #include "ButtonWindow.h"
+#include "Student.h"
+#include "GraduateStudent.h"
 #include "iostream"
 
 using namespace std;
@@ -86,4 +88,59 @@ int task2()
     cout << "-------------------" << endl;
 
     return 3;
+}
+
+int task3()
+{
+    cout << "Test 1: Creating and displaying a Student" << endl;
+    Student s1("John Doe", "123456", 3.5f);
+    cout << s1 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 2: Creating and displaying a GraduateStudent" << endl;
+    GraduateStudent gs1("Jane Smith", "789012", 3.8f, "AI in Robotics");
+    cout << gs1 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 3: Copy constructor for Student" << endl;
+    Student s2(s1);
+    cout << s2 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 4: Copy constructor for GraduateStudent" << endl;
+    GraduateStudent gs2(gs1);
+    cout << gs2 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 5: Assignment operator for Student" << endl;
+    Student s3;
+    s3 = s1;
+    cout << s3 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 6: Assignment operator for GraduateStudent" << endl;
+    GraduateStudent gs3;
+    gs3 = gs1;
+    cout << gs3 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 7: Stream input for Student" << endl;
+    Student s4;
+    cin >> s4;
+    cout << s4 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 8: Stream input for GraduateStudent" << endl;
+    GraduateStudent gs4;
+    cin >> gs4;
+    cout << gs4 << endl;
+    cout << "-------------------" << endl;
+
+    cout << "Test 9: Polymorphic behavior" << endl;
+    Student* studentPtr = new GraduateStudent("Alice Brown", "345678", 3.9f, "Quantum Computing");
+    cout << *studentPtr << endl;
+    delete studentPtr;
+    cout << "-------------------" << endl;
+
+    return 0;
 }
